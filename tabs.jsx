@@ -34,7 +34,7 @@ var Tabs = React.createClass({
           }
         </ul>
         <article>
-          {tabs[self.state.selected].content}
+          {tabs[this.state.selected].content}
         </article>
       </div>
     );

@@ -1,7 +1,17 @@
+#main {
+  font-family: sans-serif;
+}
+
 .unselected {
   font-weight: normal;
 }
 
 .selected {
   font-weight: bold;
+}
+
+
+.tab-titles {
+  margin-top: 100px;
+  border-top: 1px solid gray;
 }
