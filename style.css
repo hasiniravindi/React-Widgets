@@ -1,0 +1,7 @@
+.unselected {
+  font-weight: normal;
+}
+
+.selected {
+  font-weight: bold;
+}
