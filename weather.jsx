@@ -9,6 +9,7 @@ var Weather = React.createClass({
   componentDidMount: function() {
     var geo = navigator.geolocation;
     var self=this;
+    // raw DOM way to request
     geo.getCurrentPosition(function(position){
       var lat = position.coords.latitude;
       var lon = position.coords.longitude;
@@ -28,6 +29,18 @@ var Weather = React.createClass({
       request.send();
     });
   },
+  // BETTER SETUP
+  // componentDidMount: function(){
+  //   geo.geoCurrentPosition(this.makeWeatherRequest)
+  // },
+  // makeWeatherRequest: function(position){
+  //   //set up the XMLHttpRequest
+  //   request.onload = this.receiveWeather;
+  //   request.send();
+  // },
+  // receiveWeather: function(response){
+  //   setState{weather: response.weather}
+  // }
 
   render: function(){
     return <div>{this.state.weather}</div>;

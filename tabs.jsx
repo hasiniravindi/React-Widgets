@@ -27,7 +27,7 @@ var Tabs = React.createClass({
               }
 
               return (
-                <h1 className={ style } onClick={self.clicked.bind(self, index)}>
+                <h1 key={index} className={ style } onClick={self.clicked.bind(self, index)}>
                   {tab.title}
                 </h1>);
             })
